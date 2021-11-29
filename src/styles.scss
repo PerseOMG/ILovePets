@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+a,
+label {
+    font-family: 'Poppins', sans-serif;
+}
+
+$color1: #3d100a;
+$color2: #5f1e12;
+$color3: #813d16;
+$color4: #a85f0c;
+$color5: #d28f12;

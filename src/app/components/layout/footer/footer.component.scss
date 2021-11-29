@@ -1,0 +1,33 @@
+@import '../../../../styles.scss';
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: $color5;
+    .logo {
+        color: $color1;
+        letter-spacing: .2rem;
+        font-size: .7rem;
+        display: flex;
+        i {
+            align-self: center;
+        }
+    }
+    .nav-links {
+        display: flex;
+        justify-content: right;
+        width: 30%;
+        i {
+            color: $color1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        li {
+            list-style: none;
+            padding: 0 1rem;
+        }
+    }
+}

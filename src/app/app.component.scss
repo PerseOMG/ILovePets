@@ -1,0 +1,21 @@
+.main-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.left-side {
+    grid-column: 1 / 2;
+}
+
+header {
+    grid-column: 1 / 4;
+}
+
+main {
+    grid-column: 3 / 3;
+}
+
+footer {
+    grid-column: 1 / 4;
+}
