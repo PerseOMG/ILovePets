@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-main-content-container',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContentContainerComponent implements OnInit {
 
-  constructor() { }
+  breedSelected = new FormControl('');
 
-  ngOnInit(): void {
+  constructor() {
   }
+
+  ngOnInit(): void {}
 
 }

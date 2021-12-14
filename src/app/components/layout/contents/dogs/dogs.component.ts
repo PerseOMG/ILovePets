@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Breeds } from 'src/app/models/dogsResponse';
 import { DogsService } from '../../../../services/dogs.service';
 
@@ -8,6 +9,7 @@ import { DogsService } from '../../../../services/dogs.service';
   styleUrls: ['./dogs.component.scss'],
 })
 export class DogsComponent implements OnInit {
+  @Input() breedSelected!: FormControl;
   breeds!: string[];
 
   constructor(private dogsS: DogsService) {
@@ -16,5 +18,6 @@ export class DogsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

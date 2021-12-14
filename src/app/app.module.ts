@@ -12,6 +12,7 @@ import { AboutComponent } from './components/layout/contents/about/about.compone
 import { CardsContainerComponent } from './components/layout/contents/dogs/cards-container/cards-container.component';
 import { SidebarComponent } from './components/layout/contents/dogs/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
