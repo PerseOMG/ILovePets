@@ -17,4 +17,8 @@ export class DogsService {
   public getAllBreeds(){
     return this.http.get<BreedsResponse>(`${this.apiUrlBase}${this.apiUrlAllBreeds}`);
   }
+
+  public getDogsByBreed(breed: string){
+    return this.http.get(`${this.apiUrlBase}breed/${breed}${this.apiUrlExtension}`);
+  }
 }

@@ -1,4 +1,4 @@
 <div class="parent">
     <app-sidebar class="section" [breedSelected]="breedSelected" [breeds]="breeds" (aux)="breedSelected = $event"></app-sidebar>
-    <app-cards-container class="section" [breedSelected]="breedSelected"></app-cards-container>
+    <app-cards-container class="section" [breedSelected]="breedSelected.value"></app-cards-container>
 </div>

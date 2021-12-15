@@ -17,7 +17,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  a(breed: string){
+  changeBreed(breed: string){
     if(breed != this.breedSelected.value) this.breedSelected.setValue(breed);
     else this.breedSelected.setValue('');
     this.aux.emit(this.breedSelected)

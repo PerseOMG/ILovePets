@@ -1,7 +1,7 @@
 <div class="container">
     <h4>List of Breeds</h4>
     <form class="list" *ngFor="let breed of breeds">
-        <input type="checkbox" [checked]="breedSelected.value==breed" value="{{breed}}" (change)="a(breed)">
-        <label>{{breed}}</label>
+        <input type="checkbox" [checked]="breedSelected.value==breed" value="{{breed}}" (change)="changeBreed(breed)">
+        <label>{{breed | titlecase}}</label>
     </form>
 </div>

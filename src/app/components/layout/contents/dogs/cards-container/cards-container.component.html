@@ -1,3 +1,6 @@
 <div class="container">
-    <h1>{{breedSelected.value}}</h1>
+    <h1>{{breedSelected | titlecase}}</h1>
+    <div class="parent">
+        <img *ngFor="let image of images" class="box" [src]="image" alt="">
+    </div>
 </div>
