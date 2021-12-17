@@ -9,7 +9,7 @@ import { DogsService } from '../../../../services/dogs.service';
   styleUrls: ['./dogs.component.scss'],
 })
 export class DogsComponent implements OnInit {
-  @Input() breedSelected!: FormControl;
+  breedSelected = new FormControl('');
   breeds!: string[];
 
   constructor(private dogsS: DogsService) {

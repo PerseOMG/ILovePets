@@ -8,8 +8,6 @@ import { FormControl } from '@angular/forms';
 })
 export class MainContentContainerComponent implements OnInit {
 
-  breedSelected = new FormControl('');
-
   constructor() {
   }
 

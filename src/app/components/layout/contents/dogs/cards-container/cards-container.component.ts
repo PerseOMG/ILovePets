@@ -23,5 +23,7 @@ export class CardsContainerComponent implements OnInit {
           this.images = resp.message;
         }
       })
+    else
+      this.images = [];
     }
 }

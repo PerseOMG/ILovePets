@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   dogApiUrlBase: 'https://dog.ceo/api/',
   dogApiUrlExtension: '/images',
-  dogApiUrlAllBreeds: 'breeds/list/all'
+  dogApiUrlAllBreeds: 'breeds/list/all',
+  catsApiUrl: 'https://cat-fact.herokuapp.com/facts/random'
 };
 
 /*
