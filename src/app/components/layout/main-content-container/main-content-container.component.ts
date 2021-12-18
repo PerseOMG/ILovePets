@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-content-container',
@@ -7,10 +7,12 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./main-content-container.component.scss']
 })
 export class MainContentContainerComponent implements OnInit {
+  @Input() section!: 'dogs' | 'cats' | 'about';
 
   constructor() {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
 }

@@ -1,7 +1,7 @@
 <div class="main-container">
-    <app-header class="section"></app-header>
+    <app-header [section]="section" (aux)="section = $event" class="section"></app-header>
 
-    <app-main-content-container class="section"></app-main-content-container>
+    <app-main-content-container [section]="section" class="section"></app-main-content-container>
 
     <app-footer class="section"></app-footer>
 </div>

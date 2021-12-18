@@ -19,6 +19,7 @@ nav {
         justify-content: space-around;
         width: 30%;
         a {
+            cursor: pointer;
             color: $color1;
             text-decoration: none;
             letter-spacing: .1rem;

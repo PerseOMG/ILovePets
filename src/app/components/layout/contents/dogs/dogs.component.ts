@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { Breeds } from 'src/app/models/dogsResponse';
+import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { DogsService } from '../../../../services/dogs.service';
 
 @Component({
